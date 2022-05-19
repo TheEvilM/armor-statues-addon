@@ -10,6 +10,7 @@ tp @e[type=armor_stand,tag=as_temp_armor_stand] ~ ~ ~ facing entity @p[tag=as_se
 # stores temp armor stand angle
 #
 execute if entity @p[tag=as_selected,scores={as_trigger=1100..1111}] store result score #temp_rotation as_pose run data get entity @e[type=armor_stand,tag=as_temp_armor_stand,limit=1] Rotation[0]
+execute if entity @p[tag=as_selected,scores={as_trigger=511100..511111}] store result score #temp_rotation as_pose run data get entity @e[type=armor_stand,tag=as_temp_armor_stand,limit=1] Rotation[0]
 # Facing south
 execute if entity @p[tag=as_selected,scores={as_trigger=1100..1111}] if score #temp_rotation as_pose matches -45..45 rotated 0 0 run function armor_statues:relative_position_aligned_nudge
 execute if entity @p[tag=as_selected,scores={as_trigger=1100..1111}] if score #temp_rotation as_pose matches 316..360 rotated 0 0 run function armor_statues:relative_position_aligned_nudge
