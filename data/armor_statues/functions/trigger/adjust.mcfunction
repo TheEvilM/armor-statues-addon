@@ -12,6 +12,8 @@ function armor_statues:bugfix
 scoreboard players operation @s as_angle = @p as_angle
 scoreboard players set #as_temp as_angle 1000
 scoreboard players operation @s as_angle *= #as_temp as_angle
+scoreboard players set #as_temp as_angle 100
+execute if entity @s[scores={as_angle=0}] run scoreboard players operation @s as_angle += #as_temp as_angle
 scoreboard players reset #as_temp as_angle
 #
 # Head: 60-65

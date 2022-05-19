@@ -14,19 +14,29 @@ execute if entity @p[tag=as_selected,scores={as_trigger=1100..1111}] store resul
 execute if entity @p[tag=as_selected,scores={as_trigger=1100..1111}] if score #temp_rotation as_pose matches -45..45 rotated 0 0 run function armor_statues:relative_position_aligned_nudge
 execute if entity @p[tag=as_selected,scores={as_trigger=1100..1111}] if score #temp_rotation as_pose matches 316..360 rotated 0 0 run function armor_statues:relative_position_aligned_nudge
 execute if entity @p[tag=as_selected,scores={as_trigger=1100..1111}] if score #temp_rotation as_pose matches -360..-316 rotated 0 0 run function armor_statues:relative_position_aligned_nudge
+execute if entity @p[tag=as_selected,scores={as_trigger=511100..511111}] if score #temp_rotation as_pose matches -45..45 rotated 0 0 run function armor_statues:relative_position_aligned_nudge
+execute if entity @p[tag=as_selected,scores={as_trigger=511100..511111}] if score #temp_rotation as_pose matches 316..360 rotated 0 0 run function armor_statues:relative_position_aligned_nudge
+execute if entity @p[tag=as_selected,scores={as_trigger=511100..511111}] if score #temp_rotation as_pose matches -360..-316 rotated 0 0 run function armor_statues:relative_position_aligned_nudge
 # Facing West
 execute if entity @p[tag=as_selected,scores={as_trigger=1100..1111}] if score #temp_rotation as_pose matches 46..135 rotated 90 0 run function armor_statues:relative_position_aligned_nudge
 execute if entity @p[tag=as_selected,scores={as_trigger=1100..1111}] if score #temp_rotation as_pose matches -315..-226 rotated 90 0 run function armor_statues:relative_position_aligned_nudge
+execute if entity @p[tag=as_selected,scores={as_trigger=511100..511111}] if score #temp_rotation as_pose matches 46..135 rotated 90 0 run function armor_statues:relative_position_aligned_nudge
+execute if entity @p[tag=as_selected,scores={as_trigger=511100..511111}] if score #temp_rotation as_pose matches -315..-226 rotated 90 0 run function armor_statues:relative_position_aligned_nudge
 # Facing North
 execute if entity @p[tag=as_selected,scores={as_trigger=1100..1111}] if score #temp_rotation as_pose matches 136..225 rotated 180 0 run function armor_statues:relative_position_aligned_nudge
 execute if entity @p[tag=as_selected,scores={as_trigger=1100..1111}] if score #temp_rotation as_pose matches -225..-136 rotated 180 0 run function armor_statues:relative_position_aligned_nudge
+execute if entity @p[tag=as_selected,scores={as_trigger=511100..511111}] if score #temp_rotation as_pose matches 136..225 rotated 180 0 run function armor_statues:relative_position_aligned_nudge
+execute if entity @p[tag=as_selected,scores={as_trigger=511100..511111}] if score #temp_rotation as_pose matches -225..-136 rotated 180 0 run function armor_statues:relative_position_aligned_nudge
 # Facing East
 execute if entity @p[tag=as_selected,scores={as_trigger=1100..1111}] if score #temp_rotation as_pose matches 226..315 rotated 270 0 run function armor_statues:relative_position_aligned_nudge
 execute if entity @p[tag=as_selected,scores={as_trigger=1100..1111}] if score #temp_rotation as_pose matches -135..-46 rotated 270 0 run function armor_statues:relative_position_aligned_nudge
+execute if entity @p[tag=as_selected,scores={as_trigger=511100..511111}] if score #temp_rotation as_pose matches 226..315 rotated 270 0 run function armor_statues:relative_position_aligned_nudge
+execute if entity @p[tag=as_selected,scores={as_trigger=511100..511111}] if score #temp_rotation as_pose matches -135..-46 rotated 270 0 run function armor_statues:relative_position_aligned_nudge
 #
 # Relative nudge from player function
 #
 execute if entity @p[tag=as_selected,scores={as_trigger=1112..1129}] rotated as @e[type=armor_stand,tag=as_temp_armor_stand] run function armor_statues:relative_position_nudge
+execute if entity @p[tag=as_selected,scores={as_trigger=511112..511129}] rotated as @e[type=armor_stand,tag=as_temp_armor_stand] run function armor_statues:relative_position_nudge
 #
 # Kills temp armor stand
 #

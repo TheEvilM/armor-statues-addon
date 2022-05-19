@@ -32,7 +32,9 @@ execute if entity @s[scores={as_trigger=1..12}] as @e[type=armor_stand,tag=as_se
 #
 execute if entity @s[scores={as_trigger=40..51}] as @e[type=armor_stand,tag=as_selected] run function armor_statues:trigger/position
 execute if entity @s[scores={as_trigger=101..112}] as @e[type=armor_stand,tag=as_selected] run function armor_statues:trigger/position
+execute if entity @s[scores={as_trigger=51101..51112}] as @e[type=armor_stand,tag=as_selected] run function armor_statues:trigger/position
 execute if entity @s[scores={as_trigger=1100..1129}] as @e[type=armor_stand,tag=as_selected] at @s run function armor_statues:trigger/position_relative
+execute if entity @s[scores={as_trigger=511100..511129}] as @e[type=armor_stand,tag=as_selected] at @s run function armor_statues:trigger/position_relative
 #
 # Adjust rotation
 #
@@ -50,6 +52,7 @@ execute if entity @s[scores={as_trigger=120}] run scoreboard players set @s as_a
 execute if entity @s[scores={as_trigger=121}] run scoreboard players set @s as_angle 15
 execute if entity @s[scores={as_trigger=122}] run scoreboard players set @s as_angle 5
 execute if entity @s[scores={as_trigger=123}] run scoreboard players set @s as_angle 1
+execute if entity @s[scores={as_trigger=5123}] run scoreboard players set @s as_angle 0
 execute if entity @s[scores={as_trigger=120..123},tag=!as_chat] run title @s actionbar [{"text":"Angle step set to ","color":"dark_green"},{"score":{"name":"@s","objective":"as_angle"},"color":"dark_green"},{"text":"\u00b0","color":"dark_green"}]
 execute if entity @s[scores={as_trigger=120..123},tag=as_chat] run tellraw @s [{"text":"<Stick_God> Angle step set to ","color":"dark_green"},{"score":{"name":"@s","objective":"as_angle"},"color":"dark_green"},{"text":"\u00b0","color":"dark_green"}]
 #

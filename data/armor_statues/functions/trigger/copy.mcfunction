@@ -13,6 +13,7 @@ data modify storage customizable_armor_stands:book_storage SavedItem.tag.SavedPo
 data modify storage customizable_armor_stands:book_storage SavedItem.tag.SavedPose.Small set from entity @s Small
 data modify storage customizable_armor_stands:book_storage SavedItem.tag.SavedPose.Invisible set from entity @s Invisible
 data modify storage customizable_armor_stands:book_storage SavedItem.tag.SavedPose.CustomNameVisible set from entity @s CustomNameVisible
+data modify storage customizable_armor_stands:book_storage SavedItem.tag.SavedPose.NoGravity set from entity @s NoGravity
 #
 execute as @p[tag=as_selected] run function armor_statues:storage_out
 #
