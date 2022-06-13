@@ -18,7 +18,7 @@ execute unless score @s as_trigger matches 999 unless score @s as_trigger matche
 #
 # Undo/redo
 #
-execute as @s[scores={as_trigger=1200..1201},predicate=armor_statues:book] if entity @e[type=armor_stand,tag=as_selected] run function armor_statues:repeat/undo_redo
+execute as @s[scores={as_trigger=1200},predicate=armor_statues:book] if entity @e[type=armor_stand,tag=as_selected] run function armor_statues:repeat/undo_redo
 #
 # Give glowing effect for three seconds if checking target
 #
